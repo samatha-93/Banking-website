@@ -1,0 +1,68 @@
+/* Placeholder Images */
+.card-image {
+    position: relative;
+    background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+    overflow: hidden;
+}
+
+.card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 48%, #d1d5db 49%, #d1d5db 51%, transparent 52%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
+
+/* Credit Card Placeholder */
+.service-card:nth-child(1) .card-image::after {
+    content: '💳';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Property Loan Placeholder */
+.service-card:nth-child(2) .card-image::after {
+    content: '🏠';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Investment Placeholder */
+.service-card:nth-child(3) .card-image::after {
+    content: '📈';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Savings Account Placeholder */
+.account-card:nth-child(1) .card-image::after {
+    content: '💰';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Current Account Placeholder */
+.account-card:nth-child(2) .card-image::after {
+    content: '💼';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+} 
